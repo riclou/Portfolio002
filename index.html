@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d349635840.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="parallax.css">
+    <title>Portfolio</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<body id="body">
+    <header id="header" class="sticky">
+    <div class="light" id="inicio">
+        <img id="logo" src="img/logo.jpg" alt="logo">
+        <i id="light" class="fa-solid fa-moon"></i>
+    </div>
+    <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+        </button>
+        <ul id="menu">
+            <li><a href="#body">Home</a></li>
+            <li><a href="#about-me">Sobre mim</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contacts">Contato</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <section class="main">
+        <div class="hello">
+            <h1 class="title-word title-word-1">Olá, sejá bem vindo</h1>
+            <h2 class="title-word title-word-2">Eu sou Ricardo</h2>
+            <p class="title-word title-word-3">Desenvolvedor Front-End</p>
+            <div>
+                <a href="#projects"><button id="portfolio">Conheça meu Portfólio</button></a>
+            </div>
+        </div>
+        <div>
+            <img class="work" src="img/work.svg" alt="work-person">
+        </div>
+    </section>
+
+    <section class="about-me">
+      <h1 id="about-me" class="title-word title-word-2 default-h1">Sobre mim</h1>
+      <div class="box-about">
+        <img src="https://avatars.githubusercontent.com/u/51518580?v=4" alt="perfil image">
+        <p>Olá, meu nome é Ricardo. Estou começando na área de desenvolvimento front-end, faço alguns projetos
+          indie para aprendizagem, estou na jornada infinita de aprendizagem da área. Estou desenvolvendo projetos 
+          com react, node e ECMAScript. Disposto a aprender várias tecnologias e me integrar e ser útil a empresa.
+        </p>
+      </div>
+      <div class="resume">
+        <a href="/document/Currículo Claudio Ricardo.pdf"><button>Currículo</button></a>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h1 class="title-word title-word-2 default-h1">Projetos</h1>
+        <div class="container">
+            <div class="div-projects">
+                <img src="img/port01.png" alt="Loren Image">
+                <h2>Meu primeiro portfólio</h2>
+                <a target="_blank" href="https://github.com/riclou/portfolio"><i class="fa-solid fa-link"></i>Code {}</a>
+            </div>
+            <div class="div-projects">
+                <img src="img/parallax-project.png" alt="Loren Image">
+                <h2>Site parallax</h2>
+                <a target="_blank" href="https://github.com/riclou/Parallax-Project"><i class="fa-solid fa-link"></i>Code {}</a>
+            </div>
+            <div class="div-projects">
+                <img src="img/lorenimg.jpg" alt="Loren Image">
+                <h2>loren</h2>
+                <a target="_blank" href="https://www.lipsum.com/"><i class="fa-solid fa-link"></i>Code {}</a>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <h1 id="skills" class="default-h1 title-word title-word-2">Skills</h1>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Hover me</h1>
+                <img class="img-skills" src="img/html.webp" alt="HTMLImage">
+              </div>
+              <div class="flip-card-back">
+                <h1>HTML</h1>
+                <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+              </div>
+            </div>
+          </div>
+     
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Hover me</h1>
+                <img class="img-skills" src="img/css.webp" alt="cssImage">
+              </div>
+              <div class="flip-card-back">
+                <h1>CSS</h1>
+                <p>O CSS é uma linguagem de folhas de estilos, criada com o propósito de estilizar as páginas HTML.</p>
+              </div>
+            </div>
+          </div>
+          
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Hover me</h1>
+                <img class="img-skills" src="img/javascript.png" alt="cssImage">
+              </div>
+              <div class="flip-card-back">
+                <h1>JavaScript</h1>
+                <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
+              </div>
+            </div>
+          </div>
+     
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Hover me</h1>
+                <img class="img-skills" src="img/react.png" alt="reactImage">
+              </div>
+              <div class="flip-card-back">
+                <h1>React</h1>
+                <p>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web</p>
+              </div>
+            </div>
+          </div>
+     
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Hover me</h1>
+                <img class="img-skills" src="img/git.png" alt="GitImage">
+              </div>
+              <div class="flip-card-back">
+                <h1>Git</h1>
+                <p>Um sistema de controle de versão de arquivos. Através deles podemos desenvolver projetos na qual diversas pessoas podem contribuir.</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="contacts">
+      <h1 id="contacts" class="default-h1 title-word title-word-2">Contatos</h1>
+      <div class="box-contact">
+          <div class="email">
+            <a target="_blank" href="mailto:claudioricardo1806@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <p>claudioricardo1806@gmail.com</p>
+          </div>
+      </div>
+        <div class="box-contact">
+          <div class="email">
+            <a target="_blank" href="https://contate.me/ricloucontact"><i class="fa-brands fa-whatsapp"></i></a>
+            <p>(74) 9158-8885</p>
+          </div>
+      </div>
+      <nav class="links-contact">
+        <a href="https://www.linkedin.com/in/claudio-ricardo-silva-rego-758550221/" target="_blank"><img class="icons-img" src="img/linkedin.png" alt="linkedin-icon"></a>
+        <a href="https://github.com/riclou" target="_blank"><img class="icons-img"  src="img/github.png" alt="github-icon"></a>
+        <a href="https://contate.me/ricloucontact" target="_blank"><img class="icons-img" src="img/whatsapp.png" alt="whatsapp-icon"></a>
+      </nav>
+    </section>
+  </body>
+  </html>
