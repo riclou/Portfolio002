@@ -48,6 +48,17 @@ header {
   top: 0;
   width: 100%;
 }
+.content {
+  padding: 20px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 110px;
+}
 .light{
 display: flex;
 align-items: center;
