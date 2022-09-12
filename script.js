@@ -18,16 +18,22 @@ btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
 
-const light = document.getElementById('light')
+const light = document.getElementById('light'),
+hamburguer = document.getElementById('hamburger'),
+menu = document.getElementById('btn-mobile')
 
 light.onclick = function(){
   document.body.classList.toggle("darktheme")
   document.body.style.transition = " 0.6s ease-in"
   if(document.body.classList.contains("darktheme")){
     light.style.color = "#000"
+    hamburguer.style.color = "#000"
+    menu.style.color = "#000"
   }
   else{
     light.style.color = "#fff"
+    hamburguer.style.color = "#fff"
+    menu.style.color = "#fff"
   }
 }
 
@@ -38,7 +44,8 @@ window.onscroll = function() {
 const header = document.getElementById("header");
 const sticky = header.offsetTop;
 const menuLinks = document.querySelectorAll('a[href^="#"]')
-console.log(menuLinks)
+const links = document.querySelectorAll('.itens')
+
 
 
 function myFunction() {
@@ -46,20 +53,25 @@ function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
     header.style.backgroundColor = "var(--backgroundHeader)"
-    header.style.boxShadow = "0px 0px 3px 0px var(--words)"
-    menuLinks.forEach(e => {
+
+    links.forEach(e => {
       e.style.color = "#fff"
     })
     light.style.color = "#fff"
+    hamburguer.style.color = "#fff"
+    menu.style.color = "#fff"
+
 
   } else {
     header.classList.remove("sticky");
     header.style.backgroundColor = "var(--background)"
     header.style.boxShadow = "none"
-    menuLinks.forEach(e => {
-      e.style.color = "var(--words)"
+    links.forEach(e => {
+      e.style.color = "#fff"
     })
     light.style.color = "var(--words)"
+    hamburguer.style.color = "var(--words)"
+    menu.style.color = "var(--words)"
   }
 }
 

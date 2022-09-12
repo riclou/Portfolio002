@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d349635840.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="parallax.css">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <link rel="stylesheet" href="style.css">
@@ -21,11 +21,11 @@
             <span id="hamburger"></span>
         </button>
         <ul id="menu">
-            <li><a href="#body">Home</a></li>
-            <li><a href="#about-me">Sobre mim</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contacts">Contato</a></li>
+            <li><a class="itens" href="#body">Home</a></li>
+            <li><a class="itens" href="#about-me">Sobre mim</a></li>
+            <li><a class="itens" class="itens"a href="#projects">Projetos</a></li>
+            <li><a class="itens" href="#skills">Skills</a></li>
+            <li><a class="itens" href="#contacts">Contato</a></li>
         </ul>
     </nav>
     </header>
@@ -62,93 +62,97 @@
         <h1 class="title-word title-word-2 default-h1">Projetos</h1>
         <div class="container">
             <div class="div-projects">
-                <a target="_blank" href="http://portfolio-riclou.vercel.app/"><img src="img/port01.png" alt="Portfolio Image"></a>
+                <a target="_blank" href="http://portfolio-riclou.vercel.app/"><img class="proj-img" src="img/port01.png" alt="Portfolio Image"></a>
                 <h2>Meu primeiro portfólio</h2>
                 <a  target="_blank" href="https://github.com/riclou/portfolio"><i class="fa-solid fa-link"></i>Code {}</a>
             </div>
             <div class="div-projects">
-                <a target="_blank" href="http://parallax-project.vercel.app/"><img src="img/parallax-project.png" alt="parallax Image"></a>
+                <a target="_blank" href="http://parallax-project.vercel.app/"><img class="proj-img" src="img/parallax-project.png" alt="parallax Image"></a>
                 <h2>Site parallax</h2>
                 <a target="_blank" href="https://github.com/riclou/Parallax-Project"><i class="fa-solid fa-link"></i>Code {}</a>
             </div>
             <div class="div-projects">
-                <a target="_blank" href="http://clock-riclou.vercel.app/"><img src="img/clock.png" alt="Clock Image"></a>
+                <a target="_blank" href="http://clock-riclou.vercel.app/"><img class="proj-img" src="img/clock.png" alt="Clock Image"></a>
                 <h2>Clock</h2>
                 <a target="_blank" href="https://github.com/riclou/Clock"><i class="fa-solid fa-link"></i>Code {}</a>
             </div>
             <div class="div-projects">
-                <a target="_blank" href="http://modal-project-black.vercel.app/"><img src="img/modal.png" alt="Modal Image"></a>
+                <a target="_blank" href="http://modal-project-black.vercel.app/"><img class="proj-img" src="img/modal.png" alt="Modal Image"></a>
                 <h2>Modal</h2>
                 <a target="_blank" href="https://github.com/riclou/Modal-project"><i class="fa-solid fa-link"></i>Code {}</a>
+            </div>
+            <div class="div-projects">
+                <a target="_blank" href="https://imdb-movies-virid.vercel.app/"><img class="proj-img" src="img/IMDB.png" alt="IMDB Image"></a>
+                <h2>IMDB - Movies</h2>
+                <a target="_blank" href="https://github.com/riclou/IMDB-Movies"><i class="fa-solid fa-link"></i>Code {}</a>
             </div>
         </div>
     </section>
     <section class="skills">
         <h1 id="skills" class="default-h1 title-word title-word-2">Skills</h1>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Hover me</h1>
-                <img class="img-skills" src="img/html.webp" alt="HTMLImage">
-              </div>
-              <div class="flip-card-back">
-                <h1>HTML</h1>
-                <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
-              </div>
-            </div>
-          </div>
-     
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Hover me</h1>
-                <img class="img-skills" src="img/css.webp" alt="cssImage">
-              </div>
-              <div class="flip-card-back">
-                <h1>CSS</h1>
-                <p>O CSS é uma linguagem de folhas de estilos, criada com o propósito de estilizar as páginas HTML.</p>
+        <div class="flip-container">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h1>Hover me</h1>
+                  <img class="img-skills" src="img/html.webp" alt="HTMLImage">
+                </div>
+                <div class="flip-card-back">
+                  <h1>HTML</h1>
+                  <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+                </div>
               </div>
             </div>
-          </div>
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h1>Hover me</h1>
+                  <img class="img-skills" src="img/css.webp" alt="cssImage">
+                </div>
+                <div class="flip-card-back">
+                  <h1>CSS</h1>
+                  <p>O CSS é uma linguagem de folhas de estilos, criada com o propósito de estilizar as páginas HTML.</p>
+                </div>
+              </div>
+            </div>
           
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Hover me</h1>
-                <img class="img-skills" src="img/javascript.png" alt="cssImage">
-              </div>
-              <div class="flip-card-back">
-                <h1>JavaScript</h1>
-                <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
-              </div>
-            </div>
-          </div>
-     
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Hover me</h1>
-                <img class="img-skills" src="img/react.png" alt="reactImage">
-              </div>
-              <div class="flip-card-back">
-                <h1>React</h1>
-                <p>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web</p>
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h1>Hover me</h1>
+                  <img class="img-skills" src="img/javascript.png" alt="cssImage">
+                </div>
+                <div class="flip-card-back">
+                  <h1>JavaScript</h1>
+                  <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
+                </div>
               </div>
             </div>
-          </div>
-     
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1>Hover me</h1>
-                <img class="img-skills" src="img/git.png" alt="GitImage">
-              </div>
-              <div class="flip-card-back">
-                <h1>Git</h1>
-                <p>Um sistema de controle de versão de arquivos. Através deles podemos desenvolver projetos na qual diversas pessoas podem contribuir.</p>
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h1>Hover me</h1>
+                  <img class="img-skills" src="img/react.png" alt="reactImage">
+                </div>
+                <div class="flip-card-back">
+                  <h1>React</h1>
+                  <p>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web</p>
+                </div>
               </div>
             </div>
-          </div>
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h1>Hover me</h1>
+                  <img class="img-skills" src="img/git.png" alt="GitImage">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Git</h1>
+                  <p>Um sistema de controle de versão de arquivos. Através deles podemos desenvolver projetos na qual diversas pessoas podem contribuir.</p>
+                </div>
+              </div>
+            </div>
+        </div>
     </section>
     <section class="contacts">
       <h1 id="contacts" class="default-h1 title-word title-word-2">Contatos</h1>
