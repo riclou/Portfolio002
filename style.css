@@ -368,6 +368,38 @@ gap: 3rem;
   background-position: center center;
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  max-width: 30rem;
+}
+.close{
+  display: none;
+}
+.fa-regular{
+  cursor: pointer;
+}
+.description{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--words);
+  margin-top: 0.6rem;
+  text-align: justify;
+  text-indent: 0.7rem;
+}
+.description-link{
+  text-decoration: underline;
+}
+.js{
+  color: rgb(255, 217, 0);
+}
+.css{
+  color: rgb(0, 119, 255);
+}
+.html{
+  color: tomato;
+}
+.api{
+  color:crimson;
+}
+.all-projects{
+  margin-top: 0.9rem;
 }
 .div-projects:hover{
   transform: translateY(0) scale(1.05);
